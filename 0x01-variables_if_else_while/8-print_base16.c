@@ -5,13 +5,13 @@
  */
 int main(void)
 {
-	int n;
+	int n = 0;
 	char l;
 
-	for (n = 0; n < 10; n++)
+	for (n < 10; n++)
 		putchar((n % 10) + '0');
 	for (l = 'a'; l <= 'f'; l++)
 		putchar(l);
-	putchar('ln');
+	putchar('\n');
 	return (0);
 }
