@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	char alpha;
+	char alpha = 'a';
 
 	while
-		(alpha = 'a'; alpha <= 'z')
+		(alpha <= 'z')
 	{
 		putchar(alpha);
 		alpha++;
