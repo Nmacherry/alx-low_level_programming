@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - program that prints all possible different combinations
  * of three digits
@@ -9,23 +11,21 @@ int main(void)
 {
 	int i, n, j;
 
-	for (i = 48; i < 58; i++)
+	for (i = '0'; i < '9'; i++)
 	{
-		for (n = 48; n < 54; n++)
+		for (n = i + 1; n <= '9'; n++)
 		{
-			if (n > i)
-			{
-				for (j = 48; j < 58; j++)
+			for (j = n + 1; j <= '9'; j++)
 				{
-					if (j > n)
+					if ((n != i) != j)
 
 					{
 					putchar(i);
 					putchar(n);
 					putchar(j);
-					if (i == 55 && n == 56 && j == 57)
+					if (i == '7' && n == '8')
 						{
-							break;
+							continue;
 						}
 
 						putchar(',');
