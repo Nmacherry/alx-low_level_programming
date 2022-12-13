@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * jack_baver - Print evey minute of the day of Jack Baver
+ * jack_bauer - Print evey minute of the day of Jack Baver
  *
  * Description: Start from 00:00 to 23:59
  */
-void jack_baver(void)
+void jack_bauer(void)
 {
 	int x = 0;
 	int a = 0, b = 0, c = 0, d =  0;
@@ -27,7 +27,7 @@ void jack_baver(void)
 
 		if (c > 5)
 		{
-			c = o;
+			c = 0;
 			b++;
 		}
 
